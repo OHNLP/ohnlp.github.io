@@ -85,15 +85,8 @@ Due to the special needs of hosting a static website, some settings in the `peli
 1. `*_SAVE_AS`. Some features are not used by a simple static website, such as author page, tag page, archive page, category page, etc. So, they are all disabled and removed from output list.
 
 
-How to
-------
 
-How to update a page?
-=====================
-
-
-How to publish a news?
-======================
+## How to publish a news?
 
 You can publish a news by the following steps:
 
