@@ -31,8 +31,8 @@
     </title>
     
     <!-- Icon -->
-    <link rel="shortcut icon" href="../{{ THEME_STATIC_DIR }}/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../{{ THEME_STATIC_DIR }}/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ page_name | pg2path }}/{{ THEME_STATIC_DIR }}/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ page_name | pg2path }}/{{ THEME_STATIC_DIR }}/img/favicon.ico" type="image/x-icon">
 
     <!-- Search engine -->
     {% if page in hidden_pages %}
@@ -44,7 +44,7 @@
     <!-- Global Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
     <!-- Theme Styles -->
-    <link rel="stylesheet" href="../{{ THEME_STATIC_DIR }}/css/style.css">
+    <link rel="stylesheet" href="{{ page_name | pg2path }}/{{ THEME_STATIC_DIR }}/css/style.css">
 
 {% endblock head %}
 </head>
@@ -152,7 +152,7 @@
 
         <!-- Header -->
         <header class="pt-3 pb-3"
-            style="background-image: url('../{{ THEME_STATIC_DIR }}/img/bg-dotmatrix.jpg');background-size: contain;">
+            style="background-image: url('{{ page_name | pg2path }}/{{ THEME_STATIC_DIR }}/img/bg-dotmatrix.jpg');background-size: contain;">
             {% block header %}
             {% endblock header %}
         </header>
@@ -219,7 +219,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
     <!-- Local Script -->
-    <script type="text/javascript" src="../{{ THEME_STATIC_DIR }}/js/main.js"></script>
+    <script type="text/javascript" src="{{ page_name | pg2path }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
 
 </body>
 
